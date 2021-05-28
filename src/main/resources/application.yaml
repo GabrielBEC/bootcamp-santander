@@ -4,11 +4,8 @@ server:
     context-path: /bootcamp
 
 spring:
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/santander_bootcamp
-    username: postgres
-    password: 12345678
+  datasource:    
+    url: ${DATABASE_URL}   
   jpa:
     show-sql: true
     database-plataform: org.hibernate.dialect.PostgreSQLDialect
